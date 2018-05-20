@@ -7,14 +7,31 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+   
+    
     <title> Mercury Health</title>
       <style>
         
           .jumbotron{
+              border-radius: 0;
               margin: 0;
               border: 0;
-              height:100vh;
+=          }
+          #main-content{
+              height: 120vh;
+              text-align: center;
+          }
+          #selling-point{
+              padding-top: 70px;
+          }
+          #shop-Now{
+              margin: 50px;
+          }
+          #watch-Vid{
+              margin: 50px;
+          }
+          #info{
+              height: 50vh;
           }
           .row{
               height:80vh;
@@ -25,8 +42,48 @@
           .card{
              top: 30%;
           }
-          .contenst{
+          .contents{
               color:white;
+          }
+          #info-pic{
+              border: solid 1px black;
+              border-radius: 20px;
+              height: 35vh;
+          }
+          #prev-feature{
+              height: 20vh;
+              padding: 0;
+              padding-left: 30px;
+              text-align: center;
+          }
+          #prev-icon{
+              padding-top:50px;
+              padding-left: 50px;
+              height: 20%;
+              
+          }
+          #prev-info{
+              padding-top: 30px;
+              height: 10%;
+              top: 10px;
+          }
+          #feature{
+              height: 160vh;
+          }
+          .feature-content{
+              padding-top:70px;
+          }
+          .card{
+              text-align: center;
+          }
+          #quotes{
+              padding-top: 100px;
+              height:40vh;
+          }
+          #Award{
+              text-align: center;
+              height: 50vh;
+              border-bottom: 200px;
           }
       </style>
   </head>
@@ -38,83 +95,149 @@
   </button>
   <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
     <div class="navbar-nav ">
-      <a class="nav-item nav-link" href="#">Sign Up</a>
+     <a class="nav-item nav-link" href="#">Contact Us |</a>
+      <a class="nav-item nav-link" href="#">Sign Up |</a>
       <a class="nav-item nav-link" href="#">Log In</a>
+
     </div>
   </div>
 </nav>
       
       
       
-      <div class="jumbotron bg-faded">
+      <div class="jumbotron bg-faded" id="main-content">
+          <div id="selling-point">
   <h1 class="display-4">Mercury Health</h1>
   <p class="lead">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo mollis magna, et mattis urna fringilla a. Suspendisse potenti. Suspendisse bibendum mollis suscipit. Ut aliquam
           </p>
   <hr class="my-4">
   <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+  <a class="btn btn-primary btn-lg" id = "shop-Now" href="#" role="button">Shop Now</a>
+  <a class="btn btn-primary btn-lg" href="#" role="button" id="watch-Vid">Watch Video</a>
+          </div>
 </div>
       
       
       
       
-      <div class="jumbotron bg-primary contents">
-  <h1 class="display-4">Mercury Health</h1>
+      <div class="jumbotron bg-info" id="info">
+          <div class="row">
+          <div class="col-sm-8">
+  <h2> We reinveted the world of senior living</h2>
   <p class="lead">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo mollis magna, et mattis urna fringilla a. Suspendisse potenti. Suspendisse bibendum mollis suscipit. Ut aliquam
           </p>
-  <hr class="my-4">
-  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+          </div>
+          <div class="col-sm-4" id="info-pic">
+                <h2> some pic</h2>
+
+          </div>
+        </div>
+          
 </div>
       
-       <div class="jumbotron bg-info contents" >
-  <h1 class="display-4">Mercury Health</h1>
+      
+      
+      <div class="jumbotron bg-primary" id="prev-feature">
+          <div class="row" id="prev-icon">
+              <div class="col-sm-3">icon</div>
+              <div class="col-sm-3">icon</div>
+              <div class="col-sm-3">icon</div>
+              <div class="col-sm-3">icon</div>
+
+          </div>
+          <div class="row prev-icon" id="prev-info">
+              <div class="col-sm-3">entire home coverage</div>
+              <div class="col-sm-3"><p>Personalized care</p></div>
+              <div class="col-sm-3">secure data</div>
+              <div class="col-sm-3">fully passive</div>
+
+          </div>
+          
+      </div>
+
+       <div class="jumbotron bg-muted" id="feature">
+          <div class="row feature-content">
+          <div class="col-sm-8">
+  <h2> Big feature 1</h2>
   <p class="lead">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo mollis magna, et mattis urna fringilla a. Suspendisse potenti. Suspendisse bibendum mollis suscipit. Ut aliquam
           </p>
-  <hr class="my-4">
-  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+          </div>
+          <div class="col-sm-4" id="info-pic">
+                <h2> some pic</h2>
+
+          </div>
+
+              
+              
+           <div class="row feature-content">
+            <div class="col-sm-4" id="info-pic">
+                <h2> some pic</h2>
+
+          </div>
+          <div class="col-sm-8">
+  <h2> Big Feature 2</h2>
+  <p class="lead">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo mollis magna, et mattis urna fringilla a. Suspendisse potenti. Suspendisse bibendum mollis suscipit. Ut aliquam
+          </p>
+          </div>
+
+             
+               
+               
+          <div class="row feature-content">
+          <div class="col-sm-8">
+  <h2> Big Feature 3</h2>
+  <p class="lead">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo mollis magna, et mattis urna fringilla a. Suspendisse potenti. Suspendisse bibendum mollis suscipit. Ut aliquam
+          </p>
+          </div>
+          <div class="col-sm-4" id="info-pic">
+                <h2> some pic</h2>
+
+          </div>
+        </div>
+          
 </div>
-      
-      
-      
-      
       
      
-<div class="row">
+<div class="row" id="quotes">
   <div class="col-sm-4">
     <div class="card">
       <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <h5 class="card-title">Someone's name</h5>
+        <p class="card-text"> Quotes</p>
       </div>
     </div>
   </div>
   <div class="col-sm-4">
     <div class="card">
       <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <h5 class="card-title">Someone's name</h5>
+        <p class="card-text">Quotes</p>
       </div>
     </div>
   </div>
     <div class="col-sm-4">
     <div class="card">
       <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <h5 class="card-title">Someone's name</h5>
+        <p class="card-text">Quotes</p>
       </div>
     </div>
   </div>
 </div>
+              
       
-      
+       <div class="jumbotron bg-white" id="Award">
+  <h1 class="display-4">Winner of Microsft Imagin Cup</h1>
+  <p class="lead">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo mollis magna, et mattis urna fringilla a. Suspendisse potenti. Suspendisse bibendum mollis suscipit. Ut aliquam
+          </p>
+
+</div>
       
       
       
