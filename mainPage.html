@@ -7,11 +7,11 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-   
-    
+
+
     <title> Mercury Health</title>
       <style>
-        
+
           .jumbotron{
               border-radius: 0;
               margin: 0;
@@ -60,7 +60,7 @@
               padding-top:50px;
               padding-left: 50px;
               height: 20%;
-              
+
           }
           #prev-info{
               padding-top: 30px;
@@ -85,6 +85,19 @@
               height: 50vh;
               border-bottom: 200px;
           }
+          #contact-us{
+            padding-top: 50px;
+            height: 80vh;
+            border-top: solid black 1px;
+            width: 100%;
+          }
+          #contact-title{
+            text-align: center;
+          }
+          #Contact-submit{
+            margin-left: 43%;
+            width: 100px;
+          }
       </style>
   </head>
   <body>
@@ -95,16 +108,15 @@
   </button>
   <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
     <div class="navbar-nav ">
-     <a class="nav-item nav-link" href="#">Contact Us |</a>
-      <a class="nav-item nav-link" href="#">Sign Up |</a>
-      <a class="nav-item nav-link" href="#">Log In</a>
+     <a class="nav-item nav-link" href="#contact-us">Contact Us |</a>
+      <a class="nav-item nav-link" href="#" data-toggle="modal" data-target="#signup-modal">Sign Up |</a>
+      <a class="nav-item nav-link" href="#" data-toggle="modal" data-target="#login-modal">Log In</a>
 
     </div>
   </div>
 </nav>
-      
-      
-      
+
+
       <div class="jumbotron bg-faded" id="main-content">
           <div id="selling-point">
   <h1 class="display-4">Mercury Health</h1>
@@ -117,10 +129,72 @@
   <a class="btn btn-primary btn-lg" href="#" role="button" id="watch-Vid">Watch Video</a>
           </div>
 </div>
-      
-      
-      
-      
+<!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="signup-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Sign up</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+                <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Sign up</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Login</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+                <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary">forgot my password</button>
+        <button type="button" class="btn btn-primary">Login</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
       <div class="jumbotron bg-info" id="info">
           <div class="row">
           <div class="col-sm-8">
@@ -134,11 +208,11 @@
 
           </div>
         </div>
-          
+
 </div>
-      
-      
-      
+
+
+<!--
       <div class="jumbotron bg-primary" id="prev-feature">
           <div class="row" id="prev-icon">
               <div class="col-sm-3">icon</div>
@@ -154,8 +228,9 @@
               <div class="col-sm-3">fully passive</div>
 
           </div>
-          
+
       </div>
+  -->
 
        <div class="jumbotron bg-muted" id="feature">
           <div class="row feature-content">
@@ -170,8 +245,8 @@
 
           </div>
 
-              
-              
+
+
            <div class="row feature-content">
             <div class="col-sm-4" id="info-pic">
                 <h2> some pic</h2>
@@ -184,9 +259,9 @@
           </p>
           </div>
 
-             
-               
-               
+
+
+
           <div class="row feature-content">
           <div class="col-sm-8">
   <h2> Big Feature 3</h2>
@@ -199,10 +274,10 @@
 
           </div>
         </div>
-          
+
 </div>
-      
-     
+
+
 <div class="row" id="quotes">
   <div class="col-sm-4">
     <div class="card">
@@ -229,8 +304,8 @@
     </div>
   </div>
 </div>
-              
-      
+
+
        <div class="jumbotron bg-white" id="Award">
   <h1 class="display-4">Winner of Microsft Imagin Cup</h1>
   <p class="lead">
@@ -238,9 +313,26 @@
           </p>
 
 </div>
-      
-      
-      
+
+<div id="contact-us">
+  <h1 id="contact-title">Contact Us</h1>
+<form>
+  <div class="form-group">
+    <label for="email">Email address</label>
+    <input type="email" class="form-control" id="email" placeholder="name@example.com">
+  </div>
+
+  <div class="form-group">
+    <label for="filloutArea">Example textarea</label>
+    <textarea class="form-control" id="filloutArea" rows="3"></textarea>
+  </div>
+  <a class="btn btn-primary btn-lg" id = "Contact-submit" href="#" role="button">Submit</a>
+
+</form>
+</div>
+
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
